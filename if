@@ -1,0 +1,183 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main()
+        {
+            IF30();
+
+        }
+
+        static void IF1()
+        {
+            int a = 5;
+            if (a > 0) ;
+            { a++; }
+            Console.WriteLine(a);
+        }
+
+        static void IF2()
+        {
+            int a = -1;
+            if (a > 0)
+            { a++; }
+            else
+            { a = a - 2; }
+            Console.WriteLine(a);
+        }
+        static void IF3()
+        {
+            int a = 0;
+            if (a > 0)
+            { a++; }
+            else if (a < 0)
+            { a = a - 2; }
+            else
+            { a = 10; }
+            Console.WriteLine(a);
+        }
+        static void IF4()
+        {
+            int a = -1;
+            int b = 3;
+            int c = 2;
+            int i = 0;
+            if (a > 0)
+            { i++; }
+            if (b > 0)
+            { i++; }
+            if (c > 0)
+            { i++; }
+            Console.WriteLine(i);
+
+        }
+        static void IF5()
+        {
+            int a = -1;
+            int b = 3;
+            int c = 2;
+            int i = 0;
+            int j = 0;
+            if (a > 0)
+            { i++; }
+            else
+            { j++; }
+            if (b > 0)
+            { i++; }
+            else
+            { j++; }
+            if (c > 0)
+            { i++; }
+            else
+            { j++; }
+            Console.WriteLine(i + " " + j);
+
+        }
+        static void IF10()
+        {
+            int a = 5;
+            int b = 6;
+            if (a == b)
+            { a = 0; b = 0; }
+            else
+            { a = a + b; b = a; }
+            Console.WriteLine(a + " " + b);
+        }
+        static void IF20()
+        {
+            int a = 5;
+            int b = 6;
+            int c = 11;
+            if (b - a < c - a)
+            {
+                int d = b - a;
+                Console.WriteLine(b + " " + d);
+            }
+
+            else
+            {
+                int d = c - a;
+                Console.WriteLine(c + " " + d);
+            }
+        }
+        static void IF26()
+        {
+            int a = 5;
+
+            if (a <=0)
+            {
+                int f = -a;
+                Console.WriteLine(f);
+            }
+            else if (a<2)
+            {
+                int f = a * a;
+                Console.WriteLine(f);
+            }
+            else
+            {
+                int f = 4;
+                Console.WriteLine(f);
+            }
+            
+        }
+
+        static void IF29()
+        {
+            int a = 2134;
+
+            if (a < 0)
+            {
+                Console.Write("отрицательное" + " ");
+            }
+            else if (a > 0)
+            {
+                Console.Write(" положительное" + " ");
+            }
+            else
+            {
+                Console.Write("нулевое" + " ");
+            }
+            if (a % 2 == 0)
+            {
+                Console.Write("четное" + " ");
+            }
+            else
+            {
+                Console.Write("нечетное " + " ");
+            }
+            Console.Write("число");
+        }
+
+        static void IF30()
+            {
+                int a = 7;
+                
+                if (a % 2 == 0)
+                {
+                    Console.Write("четное" + " ");
+                }
+                else
+                {
+                    Console.Write("нечетное " + " ");
+                }
+            if (a / 100 > 1)
+            {
+                Console.Write("трехзначное" + " ");
+            }
+            else if (a / 100 > 0.1)
+            {
+                Console.Write("двухзначное" + " ");
+            }
+            else
+            {
+                Console.Write("однозначное" + " ");
+            }
+            Console.Write("число");
+
+            }
+    }
+}
+          
